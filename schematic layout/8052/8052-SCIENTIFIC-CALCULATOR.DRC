@@ -1,0 +1,63 @@
+
+Checking Pins and Pin Connections
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC
+--------------------------------------------------
+Checking Electrical Rules 
+ERROR:  [DRC0004]  Possible pin type conflict U2,VOUT Output Connected to Power
+                    SCHEMATIC, POWER SUPPLY ALT  (5.80, 1.30) 
+
+Checking for Unconnected Nets
+WARNING:  [DRC0006]  Net has fewer than two connections P10
+                    SCHEMATIC, MATRIX KEYPAD  (1.70, 1.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections P11
+                    SCHEMATIC, MATRIX KEYPAD  (1.70, 1.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections P12
+                    SCHEMATIC, MATRIX KEYPAD  (1.70, 1.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections P13
+                    SCHEMATIC, MATRIX KEYPAD  (1.70, 1.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections P14
+                    SCHEMATIC, MATRIX KEYPAD  (1.70, 1.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections P15
+                    SCHEMATIC, MATRIX KEYPAD  (1.70, 1.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections P16
+                    SCHEMATIC, MATRIX KEYPAD  (1.70, 1.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections P17
+                    SCHEMATIC, MATRIX KEYPAD  (1.70, 1.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections N17369
+                    SCHEMATIC, LCD  (4.00, 1.80) 
+WARNING:  [DRC0006]  Net has fewer than two connections N17633
+                    SCHEMATIC, LCD  (4.00, 1.90) 
+WARNING:  [DRC0006]  Net has fewer than two connections N17703
+                    SCHEMATIC, LCD  (4.00, 2.00) 
+WARNING:  [DRC0006]  Net has fewer than two connections N17773
+                    SCHEMATIC, LCD  (4.00, 2.10) 
+WARNING:  [DRC0006]  Net has fewer than two connections N17843
+                    SCHEMATIC, LCD  (4.00, 2.20) 
+WARNING:  [DRC0006]  Net has fewer than two connections N17913
+                    SCHEMATIC, LCD  (4.00, 2.30) 
+WARNING:  [DRC0006]  Net has fewer than two connections N17983
+                    SCHEMATIC, LCD  (4.00, 2.40) 
+WARNING:  [DRC0006]  Net has fewer than two connections N18053
+                    SCHEMATIC, LCD  (4.00, 2.50) 
+WARNING:  [DRC0006]  Net has fewer than two connections P20
+                    SCHEMATIC, LCD  (2.40, 1.50) 
+WARNING:  [DRC0006]  Net has fewer than two connections P21
+                    SCHEMATIC, LCD  (2.40, 1.50) 
+WARNING:  [DRC0006]  Net has fewer than two connections P22
+                    SCHEMATIC, LCD  (2.40, 1.50) 
+WARNING:  [DRC0006]  Net has fewer than two connections P23
+                    SCHEMATIC, LCD  (2.40, 1.50) 
+WARNING:  [DRC0006]  Net has fewer than two connections P24
+                    SCHEMATIC, LCD  (2.40, 1.50) 
+WARNING:  [DRC0006]  Net has fewer than two connections P25
+                    SCHEMATIC, LCD  (2.40, 1.50) 
+WARNING:  [DRC0006]  Net has fewer than two connections P26
+                    SCHEMATIC, LCD  (2.40, 1.50) 
+WARNING:  [DRC0006]  Net has fewer than two connections P27
+                    SCHEMATIC, LCD  (2.40, 1.50) 
+
+Checking for Invalid References
+
+Checking for Duplicate References

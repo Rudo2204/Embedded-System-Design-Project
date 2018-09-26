@@ -1,0 +1,137 @@
+AutoECO Report
+FILE-A: F:\TAI LIEU DH\THIET KE HE THONG NHUNG\SCHEMATIC LAYOUT\8052-SCIENTIFIC-CALCULATOR.MAX
+FILE-B: F:\TAI LIEU DH\THIET KE HE THONG NHUNG\SCHEMATIC LAYOUT\8052-SCIENTIFIC-CALCULATOR.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding package 8052
+Adding package SW_PUSHBUTTON
+Adding package POT
+Adding package CAP
+Adding package CON2
+Adding package R
+Adding package CON16
+Adding package DIODE_SCHOTTKY
+Adding package LED
+Adding package CAP_NP
+Adding package INDUCTOR
+Adding package LM2596_5P0_TRANS_1
+Adding package 1N4007
+Adding package CRYSTAL
+Adding package TEST_POINT
+Adding package 7805
+Adding component U1
+ERROR: No footprint found for comp U1
+Adding component SW8
+ERROR: No footprint found for comp SW8
+Adding component R12
+ERROR: No footprint found for comp R12
+Adding component C11
+ERROR: No footprint found for comp C11
+Adding component J2
+ERROR: No footprint found for comp J2
+Adding component R13
+ERROR: No footprint found for comp R13
+Adding component J3
+ERROR: No footprint found for comp J3
+Adding component R1
+ERROR: No footprint found for comp R1
+Adding component SW9
+ERROR: No footprint found for comp SW9
+Adding component D3
+ERROR: No footprint found for comp D3
+Adding component D4
+ERROR: No footprint found for comp D4
+Adding component D2
+ERROR: No footprint found for comp D2
+Adding component SW10
+ERROR: No footprint found for comp SW10
+Adding component C5
+ERROR: No footprint found for comp C5
+Adding component SW11
+ERROR: No footprint found for comp SW11
+Adding component C7
+ERROR: No footprint found for comp C7
+Adding component R3
+ERROR: No footprint found for comp R3
+Adding component SW2
+ERROR: No footprint found for comp SW2
+Adding component SW12
+ERROR: No footprint found for comp SW12
+Adding component C6
+ERROR: No footprint found for comp C6
+Adding component C10
+ERROR: No footprint found for comp C10
+Adding component J1
+ERROR: No footprint found for comp J1
+Adding component L1
+ERROR: No footprint found for comp L1
+Adding component SW3
+ERROR: No footprint found for comp SW3
+Adding component SW1
+ERROR: No footprint found for comp SW1
+Adding component R4
+ERROR: No footprint found for comp R4
+Adding component SW13
+ERROR: No footprint found for comp SW13
+Adding component C8
+ERROR: No footprint found for comp C8
+Adding component R2
+ERROR: No footprint found for comp R2
+Adding component C4
+ERROR: No footprint found for comp C4
+Adding component SW14
+ERROR: No footprint found for comp SW14
+Adding component U3
+ERROR: No footprint found for comp U3
+Adding component R14
+ERROR: No footprint found for comp R14
+Adding component R5
+ERROR: No footprint found for comp R5
+Adding component D1
+ERROR: No footprint found for comp D1
+Adding component R7
+ERROR: No footprint found for comp R7
+Adding component D5
+ERROR: No footprint found for comp D5
+Adding component SW4
+ERROR: No footprint found for comp SW4
+Adding component SW15
+ERROR: No footprint found for comp SW15
+Adding component X1
+ERROR: No footprint found for comp X1
+Adding component C9
+ERROR: No footprint found for comp C9
+Adding component R8
+ERROR: No footprint found for comp R8
+Adding component TP1
+ERROR: No footprint found for comp TP1
+Adding component U2
+ERROR: No footprint found for comp U2
+Adding component C1
+ERROR: No footprint found for comp C1
+Adding component R6
+ERROR: No footprint found for comp R6
+Adding component SW5
+ERROR: No footprint found for comp SW5
+Adding component TP2
+ERROR: No footprint found for comp TP2
+Adding component SW16
+ERROR: No footprint found for comp SW16
+Adding component R9
+ERROR: No footprint found for comp R9
+Adding component C2
+ERROR: No footprint found for comp C2
+Adding component SW6
+ERROR: No footprint found for comp SW6
+Adding component R10
+ERROR: No footprint found for comp R10
+Adding component C3
+ERROR: No footprint found for comp C3
+Adding component SW7
+ERROR: No footprint found for comp SW7
+Adding component R11
+ERROR: No footprint found for comp R11
+Adding component SW17
+ERROR: No footprint found for comp SW17
+*EOF*
+Unable to complete ECO due to errors
+57 errors found

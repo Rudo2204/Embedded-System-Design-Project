@@ -1,0 +1,120 @@
+(ExpressProject "8052-scientific-calculator"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\8052-scientific-calculator.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DRC_Scope "1")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "FALSE")
+    (DRC_Check_Ports "FALSE")
+    (DRC_Check_Off-Page_Connectors "FALSE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_View_Output "FALSE")
+    (DRC_Report_File
+       "F:\TAI LIEU DH\THIET KE HE THONG NHUNG\SCHEMATIC LAYOUT\8052-SCIENTIFIC-CALCULATOR.DRC")
+    (Netlist_TAB "5")
+    (LAYOUT_Netlist_File "8052-SCIENTIFIC-CALCULATOR.MNL")
+    (LAYOUT_PCB_Footprint "{PCB Footprint}")
+    (TRUE)
+    (LAYOUT_Units "0"))
+  (Folder "Outputs"
+    (File ".\8052-scientific-calculator.drc"
+      (Type "Report"))
+    (File ".\8052-scientific-calculator.mnl"
+      (Type "LAYOUT Netlist File")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (8052
+      (FullPartName "8052.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\INTEL.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\DEVICE.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (CON1
+      (FullPartName "CON1.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\DEVICE.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (CON16
+      (FullPartName "CON16.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-L
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("TEST POINT"
+      (FullPartName "TEST POINT.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\DEVICE.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\DEVICE.OLB")
+      (DeviceIndex "0"))
+    ("DIODE SCHOTTKY"
+      (FullPartName "DIODE SCHOTTKY.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\DEVICE.OLB")
+      (DeviceIndex "0"))
+    (LM2596_5P0_TRANS
+      (FullPartName "LM2596_5P0_TRANS.Normal")
+      (LibraryName "F:\8051 SIMULATOR\SNVMA61\LM2596_5P0_TRANS.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\DEVICE.OLB")
+      (DeviceIndex "0"))
+    (CAP
+      (FullPartName "CAP.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\DEVICE.OLB")
+      (DeviceIndex "0"))
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName "F:\8051 SIMULATOR\ORCADLIBRARYFULL\CAPTUE\CONNECTOR.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "F:\8051 simulator\snvma61")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "F:\Tai lieu DH\Thiet ke he thong nhung\schematic layout\8052-scientific-calculator.dsn")
+      (Path "Design Resources"
+         "F:\Tai lieu DH\Thiet ke he thong nhung\schematic layout\8052-scientific-calculator.dsn"
+         "SCHEMATIC")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "F:\Tai lieu DH\Thiet ke he thong nhung\schematic layout\8052-scientific-calculator.dsn"
+         "SCHEMATIC" "MATRIX KEYPAD"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 604 1062 5 502"))
+      (Tab 0))))
