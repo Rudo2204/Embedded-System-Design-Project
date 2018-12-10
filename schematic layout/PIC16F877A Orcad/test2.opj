@@ -1,0 +1,83 @@
+(ExpressProject "test2"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\test2.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\OLDLIBS\LAYOUT.OLB")
+      (DeviceIndex "0"))
+    ($D_HI
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (SW_PB_SPST
+      (FullPartName "SW_PB_SPST.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (RES
+      (FullPartName "RES.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\OLDLIBS\PSPICE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (CAP
+      (FullPartName "CAP.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\OLDLIBS\PSPICE.OLB")
+      (DeviceIndex "0"))
+    (XTAL
+      (FullPartName "XTAL.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\OLDLIBS\ASSEMBLY.OLB")
+      (DeviceIndex "0"))
+    (B2S
+      (FullPartName "B2S.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    ("RESISTOR TAPPED"
+      (FullPartName "RESISTOR TAPPED.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\OLDLIBS\LAYOUT.OLB")
+      (DeviceIndex "0"))
+    (LCD16
+      (FullPartName "LCD16.Normal")
+      (LibraryName "D:\APP\LIBRARY\ORCAD\LIB_USER\LIB_USER\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (LM7805
+      (FullPartName "LM7805.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\IEC\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (16F877A
+      (FullPartName "16F877A.Normal")
+      (LibraryName "D:\APP\LIBRARY\ORCAD\LIB_USER\LIB_USER\LIB_USER.OLB")
+      (DeviceIndex "0"))
+    (PIC16F873/SO
+      (FullPartName "PIC16F873/SO.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\MICROCONTROLLER.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "D:\App\LIBRARY\Orcad\LIB_USER\LIB_USER")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\Users\DELL\Desktop\Capture\test2.dsn")
+      (Path "Design Resources" "C:\Users\DELL\Desktop\Capture\test2.dsn"
+         "SCHEMATIC1")
+      (Select "Design Resources" "C:\Users\DELL\Desktop\Capture\test2.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 160 604 -8 -31 0 200 0 381"))
+      (Tab 0))))
