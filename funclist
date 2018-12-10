@@ -1,0 +1,18 @@
+___awdiv: CODE, 1813 0 69
+_DispError: CODE, 1657 0 23
+_WriteCommandToLCD: CODE, 1999 0 18
+_main: CODE, 980 0 237
+_GetKey: CODE, 1217 0 11
+_WriteStringToLCD: CODE, 1680 0 23
+_InitLCD: CODE, 1882 0 95
+_InitKeypad: CODE, 974 0 6
+_WriteDataToLCD: CODE, 1756 0 18
+_disp_num: CODE, 1703 0 53
+_get_num: CODE, 1581 0 76
+_ToggleEpinOfLCD: CODE, 1977 0 22
+___wmul: CODE, 1788 0 25
+_ClearLCDScreen: CODE, 2017 0 14
+_READ_SWITCHES: CODE, 1228 0 321
+_get_func: CODE, 1552 0 29
+___bmul: CODE, 1774 0 14
+Total: 1054
