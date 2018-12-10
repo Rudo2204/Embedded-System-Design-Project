@@ -1890,594 +1890,613 @@ Version 3.2 HI-TECH Software Intermediate Code
  110 ]
 "54
 [e :U 110 ]
-[; ;Main.c: 55: if(!shift && func != '.') WriteDataToLCD(func);
+[; ;Main.c: 55: if(num1 == 0 && key == '/')
 "55
-[e $ ! && ! != _shift -> 0 `i != -> _func `ui -> 46 `ui 116  ]
-[e ( _WriteDataToLCD (1 _func ]
-[e :U 116 ]
-[; ;Main.c: 56: if(func == '^') WriteDataToLCD(0x32);
+[e $ ! && == _num1 -> -> 0 `i `l == -> _key `ui -> 47 `ui 116  ]
+[; ;Main.c: 56: {
 "56
-[e $ ! == -> _func `ui -> 94 `ui 117  ]
-[e ( _WriteDataToLCD (1 -> -> 50 `i `uc ]
-[e :U 117 ]
+{
+[; ;Main.c: 57: shift = 0;
 "57
+[e = _shift -> 0 `i ]
+[; ;Main.c: 58: next = 0;
+"58
+[e = _next -> 0 `i ]
+[; ;Main.c: 59: break;
+"59
+[e $U 107  ]
+"60
+}
+[e :U 116 ]
+[; ;Main.c: 60: }
+[; ;Main.c: 61: if(!shift && func != '.') WriteDataToLCD(func);
+"61
+[e $ ! && ! != _shift -> 0 `i != -> _func `ui -> 46 `ui 117  ]
+[e ( _WriteDataToLCD (1 _func ]
+[e :U 117 ]
+[; ;Main.c: 62: if(func == '^') WriteDataToLCD(0x32);
+"62
+[e $ ! == -> _func `ui -> 94 `ui 118  ]
+[e ( _WriteDataToLCD (1 -> -> 50 `i `uc ]
+[e :U 118 ]
+"63
 }
 [e :U 109 ]
-"58
+"64
 }
 [e :U 105 ]
 "37
 [e $ ! != _next -> 0 `i 106  ]
 [e :U 107 ]
-[; ;Main.c: 57: }
-[; ;Main.c: 58: }
-[; ;Main.c: 60: while(shift)
-"60
-[e $U 118  ]
-[e :U 119 ]
-[; ;Main.c: 61: {
-"61
-{
-[; ;Main.c: 62: key = GetKey();
-"62
-[e = _key ( _GetKey ..  ]
-[; ;Main.c: 63: switch(key)
-"63
-[e $U 122  ]
-[; ;Main.c: 64: {
-"64
-{
-[; ;Main.c: 65: case '+': func = 'x'; shift = 0; break;
-"65
-[e :U 123 ]
-[e = _func -> -> 120 `ui `uc ]
-[e = _shift -> 0 `i ]
-[e $U 121  ]
-[; ;Main.c: 66: case '-': func = '/'; shift = 0; break;
+[; ;Main.c: 63: }
+[; ;Main.c: 64: }
+[; ;Main.c: 66: while(shift)
 "66
-[e :U 124 ]
-[e = _func -> -> 47 `ui `uc ]
-[e = _shift -> 0 `i ]
-[e $U 121  ]
-[; ;Main.c: 67: case 'x': func = 'f'; shift = 0; break;
+[e $U 119  ]
+[e :U 120 ]
+[; ;Main.c: 67: {
 "67
-[e :U 125 ]
-[e = _func -> -> 102 `ui `uc ]
-[e = _shift -> 0 `i ]
-[e $U 121  ]
+{
+[; ;Main.c: 68: key = GetKey();
 "68
-}
-[; ;Main.c: 68: }
-[e $U 121  ]
-"63
-[e :U 122 ]
-[e [\ _key , $ -> -> 43 `ui `uc 123
- , $ -> -> 45 `ui `uc 124
- , $ -> -> 120 `ui `uc 125
- 121 ]
-"68
-[e :U 121 ]
-[; ;Main.c: 69: if(func=='f')
+[e = _key ( _GetKey ..  ]
+[; ;Main.c: 69: switch(key)
 "69
-[e $ ! == -> _func `ui -> 102 `ui 126  ]
+[e $U 123  ]
 [; ;Main.c: 70: {
 "70
 {
-[; ;Main.c: 71: WriteDataToLCD(0xE8);
+[; ;Main.c: 71: case '+': func = 'x'; shift = 0; break;
 "71
-[e ( _WriteDataToLCD (1 -> -> 232 `i `uc ]
-[; ;Main.c: 72: WriteDataToLCD(0x32);
+[e :U 124 ]
+[e = _func -> -> 120 `ui `uc ]
+[e = _shift -> 0 `i ]
+[e $U 122  ]
+[; ;Main.c: 72: case '-': func = '/'; shift = 0; break;
 "72
-[e ( _WriteDataToLCD (1 -> -> 50 `i `uc ]
+[e :U 125 ]
+[e = _func -> -> 47 `ui `uc ]
+[e = _shift -> 0 `i ]
+[e $U 122  ]
+[; ;Main.c: 73: case 'x': func = 'f'; shift = 0; break;
 "73
-}
-[; ;Main.c: 73: }
-[e $U 127  ]
-"74
 [e :U 126 ]
-[; ;Main.c: 74: else WriteDataToLCD(func);
-[e ( _WriteDataToLCD (1 _func ]
-[e :U 127 ]
+[e = _func -> -> 102 `ui `uc ]
+[e = _shift -> 0 `i ]
+[e $U 122  ]
+"74
+}
+[; ;Main.c: 74: }
+[e $U 122  ]
+"69
+[e :U 123 ]
+[e [\ _key , $ -> -> 43 `ui `uc 124
+ , $ -> -> 45 `ui `uc 125
+ , $ -> -> 120 `ui `uc 126
+ 122 ]
+"74
+[e :U 122 ]
+[; ;Main.c: 75: if(func=='f')
 "75
-}
-[e :U 118 ]
-"60
-[e $ != _shift -> 0 `i 119  ]
-[e :U 120 ]
-[; ;Main.c: 75: }
-[; ;Main.c: 77: next = 0;
+[e $ ! == -> _func `ui -> 102 `ui 127  ]
+[; ;Main.c: 76: {
+"76
+{
+[; ;Main.c: 77: WriteDataToLCD(0xE8);
 "77
-[e = _next -> 0 `i ]
-[; ;Main.c: 78: while(!next)
+[e ( _WriteDataToLCD (1 -> -> 232 `i `uc ]
+[; ;Main.c: 78: WriteDataToLCD(0x32);
 "78
-[e $U 128  ]
-[e :U 129 ]
-[; ;Main.c: 79: {
+[e ( _WriteDataToLCD (1 -> -> 50 `i `uc ]
 "79
-{
-[; ;Main.c: 80: key = GetKey();
-"80
-[e = _key ( _GetKey ..  ]
-[; ;Main.c: 81: tmp = get_num(key);
-"81
-[e = _tmp ( _get_num (1 _key ]
-[; ;Main.c: 82: if(tmp != 13)
-"82
-[e $ ! != _tmp -> 13 `i 131  ]
-[; ;Main.c: 83: {
-"83
-{
-[; ;Main.c: 84: WriteDataToLCD(key);
-"84
-[e ( _WriteDataToLCD (1 _key ]
-[; ;Main.c: 85: num2 = num2*10 + tmp;
-"85
-[e = _num2 + * _num2 -> -> 10 `i `l -> _tmp `l ]
-"86
 }
-[; ;Main.c: 86: }
-[e $U 132  ]
+[; ;Main.c: 79: }
+[e $U 128  ]
+"80
+[e :U 127 ]
+[; ;Main.c: 80: else WriteDataToLCD(func);
+[e ( _WriteDataToLCD (1 _func ]
+[e :U 128 ]
+"81
+}
+[e :U 119 ]
+"66
+[e $ != _shift -> 0 `i 120  ]
+[e :U 121 ]
+[; ;Main.c: 81: }
+[; ;Main.c: 83: next = 0;
+"83
+[e = _next -> 0 `i ]
+[; ;Main.c: 84: while(!next)
+"84
+[e $U 129  ]
+[e :U 130 ]
+[; ;Main.c: 85: {
+"85
+{
+[; ;Main.c: 86: key = GetKey();
+"86
+[e = _key ( _GetKey ..  ]
+[; ;Main.c: 87: tmp = get_num(key);
 "87
-[e :U 131 ]
-[; ;Main.c: 87: else
-[; ;Main.c: 88: {
+[e = _tmp ( _get_num (1 _key ]
+[; ;Main.c: 88: if(tmp != 13)
 "88
-{
-[; ;Main.c: 89: switch(key)
+[e $ ! != _tmp -> 13 `i 132  ]
+[; ;Main.c: 89: {
 "89
-[e $U 134  ]
-[; ;Main.c: 90: {
-"90
 {
-[; ;Main.c: 91: case '=': WriteCommandToLCD(0xC0); WriteDataToLCD(key); next = 1; break;
-"91
-[e :U 135 ]
-[e ( _WriteCommandToLCD (1 -> -> 192 `i `uc ]
+[; ;Main.c: 90: WriteDataToLCD(key);
+"90
 [e ( _WriteDataToLCD (1 _key ]
-[e = _next -> 1 `i ]
-[e $U 133  ]
+[; ;Main.c: 91: num2 = num2*10 + tmp;
+"91
+[e = _num2 + * _num2 -> -> 10 `i `l -> _tmp `l ]
 "92
 }
 [; ;Main.c: 92: }
 [e $U 133  ]
-"89
-[e :U 134 ]
-[e [\ _key , $ -> -> 61 `ui `uc 135
- 133 ]
-"92
-[e :U 133 ]
 "93
-}
 [e :U 132 ]
+[; ;Main.c: 93: else
+[; ;Main.c: 94: {
 "94
-}
-[e :U 128 ]
-"78
-[e $ ! != _next -> 0 `i 129  ]
-[e :U 130 ]
-[; ;Main.c: 93: }
-[; ;Main.c: 94: }
-[; ;Main.c: 96: switch(func)
+{
+[; ;Main.c: 95: switch(key)
+"95
+[e $U 135  ]
+[; ;Main.c: 96: {
 "96
-[e $U 137  ]
-[; ;Main.c: 97: {
+{
+[; ;Main.c: 97: case '=': WriteCommandToLCD(0xC0); WriteDataToLCD(key); next = 1; break;
 "97
-{
-[; ;Main.c: 98: case '+': result = num1 + num2; break;
+[e :U 136 ]
+[e ( _WriteCommandToLCD (1 -> -> 192 `i `uc ]
+[e ( _WriteDataToLCD (1 _key ]
+[e = _next -> 1 `i ]
+[e $U 134  ]
 "98
-[e :U 138 ]
-[e = _result -> + _num1 _num2 `d ]
-[e $U 136  ]
-[; ;Main.c: 99: case '-': result = num1 - num2; break;
+}
+[; ;Main.c: 98: }
+[e $U 134  ]
+"95
+[e :U 135 ]
+[e [\ _key , $ -> -> 61 `ui `uc 136
+ 134 ]
+"98
+[e :U 134 ]
 "99
-[e :U 139 ]
-[e = _result -> - _num1 _num2 `d ]
-[e $U 136  ]
-[; ;Main.c: 100: case 'x': result = num1*num2; break;
+}
+[e :U 133 ]
 "100
-[e :U 140 ]
-[e = _result -> * _num1 _num2 `d ]
-[e $U 136  ]
-[; ;Main.c: 101: case '/':
-"101
-[e :U 141 ]
-[; ;Main.c: 102: {
+}
+[e :U 129 ]
+"84
+[e $ ! != _next -> 0 `i 130  ]
+[e :U 131 ]
+[; ;Main.c: 99: }
+[; ;Main.c: 100: }
+[; ;Main.c: 102: switch(func)
 "102
-{
-[; ;Main.c: 103: if(num2==0) DispError(2);
+[e $U 138  ]
+[; ;Main.c: 103: {
 "103
-[e $ ! == _num2 -> -> 0 `i `l 142  ]
-[e ( _DispError (1 -> 2 `i ]
-[e $U 143  ]
-"104
-[e :U 142 ]
-[; ;Main.c: 104: else
-[; ;Main.c: 105: {
-"105
 {
-[; ;Main.c: 106: result = num1/num2;
+[; ;Main.c: 104: case '+': result = num1 + num2; break;
+"104
+[e :U 139 ]
+[e = _result -> + _num1 _num2 `d ]
+[e $U 137  ]
+[; ;Main.c: 105: case '-': result = num1 - num2; break;
+"105
+[e :U 140 ]
+[e = _result -> - _num1 _num2 `d ]
+[e $U 137  ]
+[; ;Main.c: 106: case 'x': result = num1*num2; break;
 "106
-[e = _result -> / _num1 _num2 `d ]
-[; ;Main.c: 107: break;
+[e :U 141 ]
+[e = _result -> * _num1 _num2 `d ]
+[e $U 137  ]
+[; ;Main.c: 107: case '/':
 "107
-[e $U 136  ]
+[e :U 142 ]
+[; ;Main.c: 108: {
 "108
-}
-[e :U 143 ]
+{
+[; ;Main.c: 109: if(num2==0) DispError(2);
 "109
-}
-[; ;Main.c: 108: }
-[; ;Main.c: 109: }
-[; ;Main.c: 110: case '^':
+[e $ ! == _num2 -> -> 0 `i `l 143  ]
+[e ( _DispError (1 -> 2 `i ]
+[e $U 144  ]
 "110
-[e :U 144 ]
+[e :U 143 ]
+[; ;Main.c: 110: else
 [; ;Main.c: 111: {
 "111
 {
-[; ;Main.c: 112: if(num2 != 0) DispError(2);
+[; ;Main.c: 112: result = num1/num2;
 "112
-[e $ ! != _num2 -> -> 0 `i `l 145  ]
-[e ( _DispError (1 -> 2 `i ]
-[e $U 146  ]
+[e = _result -> / _num1 _num2 `d ]
+[; ;Main.c: 113: break;
 "113
-[e :U 145 ]
-[; ;Main.c: 113: else result = num1*num1;
-[e = _result -> * _num1 _num1 `d ]
-[e :U 146 ]
-[; ;Main.c: 114: break;
+[e $U 137  ]
 "114
-[e $U 136  ]
+}
+[e :U 144 ]
 "115
 }
+[; ;Main.c: 114: }
 [; ;Main.c: 115: }
-[; ;Main.c: 116: case 'f':
+[; ;Main.c: 116: case '^':
 "116
-[e :U 147 ]
+[e :U 145 ]
 [; ;Main.c: 117: {
 "117
 {
 [; ;Main.c: 118: if(num2 != 0) DispError(2);
 "118
-[e $ ! != _num2 -> -> 0 `i `l 148  ]
+[e $ ! != _num2 -> -> 0 `i `l 146  ]
 [e ( _DispError (1 -> 2 `i ]
-[e $U 149  ]
+[e $U 147  ]
 "119
-[e :U 148 ]
-[; ;Main.c: 119: else result = sqrt(num1);
-[e = _result ( _sqrt (1 -> _num1 `d ]
-[e :U 149 ]
+[e :U 146 ]
+[; ;Main.c: 119: else result = num1*num1;
+[e = _result -> * _num1 _num1 `d ]
+[e :U 147 ]
 [; ;Main.c: 120: break;
 "120
-[e $U 136  ]
+[e $U 137  ]
 "121
 }
-"122
-}
 [; ;Main.c: 121: }
-[; ;Main.c: 122: }
-[e $U 136  ]
-"96
-[e :U 137 ]
-[e [\ _func , $ -> -> 43 `ui `uc 138
- , $ -> -> 45 `ui `uc 139
- , $ -> -> 120 `ui `uc 140
- , $ -> -> 47 `ui `uc 141
- , $ -> -> 94 `ui `uc 144
- , $ -> -> 102 `ui `uc 147
- 136 ]
+[; ;Main.c: 122: case 'f':
 "122
-[e :U 136 ]
-[; ;Main.c: 123: sprintf(msg, "%.2f", result);
+[e :U 148 ]
+[; ;Main.c: 123: {
 "123
-[e ( _sprintf (1 , (. , &U _msg :s 1C _result ]
-[; ;Main.c: 124: for(int i=0;i<16;i++)
+{
+[; ;Main.c: 124: if(num2 != 0) DispError(2);
 "124
+[e $ ! != _num2 -> -> 0 `i `l 149  ]
+[e ( _DispError (1 -> 2 `i ]
+[e $U 150  ]
+"125
+[e :U 149 ]
+[; ;Main.c: 125: else result = sqrt(num1);
+[e = _result ( _sqrt (1 -> _num1 `d ]
+[e :U 150 ]
+[; ;Main.c: 126: break;
+"126
+[e $U 137  ]
+"127
+}
+"128
+}
+[; ;Main.c: 127: }
+[; ;Main.c: 128: }
+[e $U 137  ]
+"102
+[e :U 138 ]
+[e [\ _func , $ -> -> 43 `ui `uc 139
+ , $ -> -> 45 `ui `uc 140
+ , $ -> -> 120 `ui `uc 141
+ , $ -> -> 47 `ui `uc 142
+ , $ -> -> 94 `ui `uc 145
+ , $ -> -> 102 `ui `uc 148
+ 137 ]
+"128
+[e :U 137 ]
+[; ;Main.c: 129: sprintf(msg, "%.2f", result);
+"129
+[e ( _sprintf (1 , (. , &U _msg :s 1C _result ]
+[; ;Main.c: 130: for(int i=0;i<16;i++)
+"130
 {
 [v _i `i  1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 16 `i 150  ]
-[e $U 151  ]
-"125
-[e :U 150 ]
-[; ;Main.c: 125: if(!msg[i]) break;
-[e $ ! ! != -> *U + &U _msg * -> -> _i `ui `ux -> -> # *U &U _msg `ui `ux `i -> -> -> 0 `i `uc `i 153  ]
-[e $U 151  ]
-[e $U 154  ]
-"126
-[e :U 153 ]
-[; ;Main.c: 126: else WriteDataToLCD(msg[i]);
-[e ( _WriteDataToLCD (1 *U + &U _msg * -> -> _i `ui `ux -> -> # *U &U _msg `ui `ux ]
-[e :U 154 ]
-"124
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 16 `i 150  ]
-[e :U 151 ]
-"126
-}
-[; ;Main.c: 128: next = 0;
-"128
-[e = _next -> 0 `i ]
-[; ;Main.c: 129: num1 = 0;
-"129
-[e = _num1 -> -> 0 `i `l ]
-[; ;Main.c: 130: num2 = 0;
-"130
-[e = _num2 -> -> 0 `i `l ]
-[; ;Main.c: 131: func = '.';
+[e $ < _i -> 16 `i 151  ]
+[e $U 152  ]
 "131
-[e = _func -> -> 46 `ui `uc ]
+[e :U 151 ]
+[; ;Main.c: 131: if(!msg[i]) break;
+[e $ ! ! != -> *U + &U _msg * -> -> _i `ui `ux -> -> # *U &U _msg `ui `ux `i -> -> -> 0 `i `uc `i 154  ]
+[e $U 152  ]
+[e $U 155  ]
 "132
+[e :U 154 ]
+[; ;Main.c: 132: else WriteDataToLCD(msg[i]);
+[e ( _WriteDataToLCD (1 *U + &U _msg * -> -> _i `ui `ux -> -> # *U &U _msg `ui `ux ]
+[e :U 155 ]
+"130
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 151  ]
+[e :U 152 ]
+"132
+}
+[; ;Main.c: 134: next = 0;
+"134
+[e = _next -> 0 `i ]
+[; ;Main.c: 135: num1 = 0;
+"135
+[e = _num1 -> -> 0 `i `l ]
+[; ;Main.c: 136: num2 = 0;
+"136
+[e = _num2 -> -> 0 `i `l ]
+[; ;Main.c: 137: func = '.';
+"137
+[e = _func -> -> 46 `ui `uc ]
+"138
 }
 [e :U 102 ]
 "33
 [e $U 103  ]
 [e :U 104 ]
-[; ;Main.c: 132: }
-[; ;Main.c: 133: }
-"133
+[; ;Main.c: 138: }
+[; ;Main.c: 139: }
+"139
 [e :UE 101 ]
 }
-"142
+"148
 [v _get_num `(i  1 ef1`uc ]
 {
-[; ;Main.c: 141: int get_num(char ch)
-[; ;Main.c: 142: {
+[; ;Main.c: 147: int get_num(char ch)
+[; ;Main.c: 148: {
 [e :U _get_num ]
 [v _ch `uc  1 r1 ]
 [f ]
-"143
-[v _num `i  1 a ]
-[; ;Main.c: 143: int num = 0;
-[e = _num -> 0 `i ]
-[; ;Main.c: 145: switch(ch)
-"145
-[e $U 157  ]
-[; ;Main.c: 146: {
-"146
-{
-[; ;Main.c: 147: case '0': num = 0; break;
-"147
-[e :U 158 ]
-[e = _num -> 0 `i ]
-[e $U 156  ]
-[; ;Main.c: 148: case '1': num = 1; break;
-"148
-[e :U 159 ]
-[e = _num -> 1 `i ]
-[e $U 156  ]
-[; ;Main.c: 149: case '2': num = 2; break;
 "149
-[e :U 160 ]
-[e = _num -> 2 `i ]
-[e $U 156  ]
-[; ;Main.c: 150: case '3': num = 3; break;
-"150
-[e :U 161 ]
-[e = _num -> 3 `i ]
-[e $U 156  ]
-[; ;Main.c: 151: case '4': num = 4; break;
+[v _num `i  1 a ]
+[; ;Main.c: 149: int num = 0;
+[e = _num -> 0 `i ]
+[; ;Main.c: 151: switch(ch)
 "151
-[e :U 162 ]
-[e = _num -> 4 `i ]
-[e $U 156  ]
-[; ;Main.c: 152: case '5': num = 5; break;
+[e $U 158  ]
+[; ;Main.c: 152: {
 "152
-[e :U 163 ]
-[e = _num -> 5 `i ]
-[e $U 156  ]
-[; ;Main.c: 153: case '6': num = 6; break;
+{
+[; ;Main.c: 153: case '0': num = 0; break;
 "153
-[e :U 164 ]
-[e = _num -> 6 `i ]
-[e $U 156  ]
-[; ;Main.c: 154: case '7': num = 7; break;
+[e :U 159 ]
+[e = _num -> 0 `i ]
+[e $U 157  ]
+[; ;Main.c: 154: case '1': num = 1; break;
 "154
-[e :U 165 ]
-[e = _num -> 7 `i ]
-[e $U 156  ]
-[; ;Main.c: 155: case '8': num = 8; break;
+[e :U 160 ]
+[e = _num -> 1 `i ]
+[e $U 157  ]
+[; ;Main.c: 155: case '2': num = 2; break;
 "155
-[e :U 166 ]
-[e = _num -> 8 `i ]
-[e $U 156  ]
-[; ;Main.c: 156: case '9': num = 9; break;
+[e :U 161 ]
+[e = _num -> 2 `i ]
+[e $U 157  ]
+[; ;Main.c: 156: case '3': num = 3; break;
 "156
-[e :U 167 ]
-[e = _num -> 9 `i ]
-[e $U 156  ]
-[; ;Main.c: 157: case 'C': ClearLCDScreen(); num = 13; break;
+[e :U 162 ]
+[e = _num -> 3 `i ]
+[e $U 157  ]
+[; ;Main.c: 157: case '4': num = 4; break;
 "157
+[e :U 163 ]
+[e = _num -> 4 `i ]
+[e $U 157  ]
+[; ;Main.c: 158: case '5': num = 5; break;
+"158
+[e :U 164 ]
+[e = _num -> 5 `i ]
+[e $U 157  ]
+[; ;Main.c: 159: case '6': num = 6; break;
+"159
+[e :U 165 ]
+[e = _num -> 6 `i ]
+[e $U 157  ]
+[; ;Main.c: 160: case '7': num = 7; break;
+"160
+[e :U 166 ]
+[e = _num -> 7 `i ]
+[e $U 157  ]
+[; ;Main.c: 161: case '8': num = 8; break;
+"161
+[e :U 167 ]
+[e = _num -> 8 `i ]
+[e $U 157  ]
+[; ;Main.c: 162: case '9': num = 9; break;
+"162
 [e :U 168 ]
+[e = _num -> 9 `i ]
+[e $U 157  ]
+[; ;Main.c: 163: case 'C': ClearLCDScreen(); num = 13; break;
+"163
+[e :U 169 ]
 [e ( _ClearLCDScreen ..  ]
 [e = _num -> 13 `i ]
-[e $U 156  ]
-[; ;Main.c: 158: default: num = 13; break;
-"158
-[e :U 169 ]
+[e $U 157  ]
+[; ;Main.c: 164: default: num = 13; break;
+"164
+[e :U 170 ]
 [e = _num -> 13 `i ]
-[e $U 156  ]
-"159
-}
-[; ;Main.c: 159: }
-[e $U 156  ]
-"145
-[e :U 157 ]
-[e [\ _ch , $ -> -> 48 `ui `uc 158
- , $ -> -> 49 `ui `uc 159
- , $ -> -> 50 `ui `uc 160
- , $ -> -> 51 `ui `uc 161
- , $ -> -> 52 `ui `uc 162
- , $ -> -> 53 `ui `uc 163
- , $ -> -> 54 `ui `uc 164
- , $ -> -> 55 `ui `uc 165
- , $ -> -> 56 `ui `uc 166
- , $ -> -> 57 `ui `uc 167
- , $ -> -> 67 `ui `uc 168
- 169 ]
-"159
-[e :U 156 ]
-[; ;Main.c: 161: return num;
-"161
-[e ) _num ]
-[e $UE 155  ]
-[; ;Main.c: 162: }
-"162
-[e :UE 155 ]
-}
+[e $U 157  ]
 "165
+}
+[; ;Main.c: 165: }
+[e $U 157  ]
+"151
+[e :U 158 ]
+[e [\ _ch , $ -> -> 48 `ui `uc 159
+ , $ -> -> 49 `ui `uc 160
+ , $ -> -> 50 `ui `uc 161
+ , $ -> -> 51 `ui `uc 162
+ , $ -> -> 52 `ui `uc 163
+ , $ -> -> 53 `ui `uc 164
+ , $ -> -> 54 `ui `uc 165
+ , $ -> -> 55 `ui `uc 166
+ , $ -> -> 56 `ui `uc 167
+ , $ -> -> 57 `ui `uc 168
+ , $ -> -> 67 `ui `uc 169
+ 170 ]
+"165
+[e :U 157 ]
+[; ;Main.c: 167: return num;
+"167
+[e ) _num ]
+[e $UE 156  ]
+[; ;Main.c: 168: }
+"168
+[e :UE 156 ]
+}
+"171
 [v _get_func `(uc  1 ef1`uc ]
 {
-[; ;Main.c: 164: char get_func(char chf)
-[; ;Main.c: 165: {
+[; ;Main.c: 170: char get_func(char chf)
+[; ;Main.c: 171: {
 [e :U _get_func ]
 [v _chf `uc  1 r1 ]
 [f ]
-[; ;Main.c: 166: if(chf=='C')
-"166
-[e $ ! == -> _chf `ui -> 67 `ui 171  ]
-[; ;Main.c: 167: {
-"167
-{
-[; ;Main.c: 168: ClearLCDScreen();
-"168
-[e ( _ClearLCDScreen ..  ]
-[; ;Main.c: 169: return 'e';
-"169
-[e ) -> -> 101 `ui `uc ]
-[e $UE 170  ]
-"170
-}
-[e :U 171 ]
-[; ;Main.c: 170: }
-[; ;Main.c: 172: if( chf!='+' && chf!='-' && chf!='x' && chf!='/' )
+[; ;Main.c: 172: if(chf=='C')
 "172
-[e $ ! && && && != -> _chf `ui -> 43 `ui != -> _chf `ui -> 45 `ui != -> _chf `ui -> 120 `ui != -> _chf `ui -> 47 `ui 172  ]
+[e $ ! == -> _chf `ui -> 67 `ui 172  ]
 [; ;Main.c: 173: {
 "173
 {
-[; ;Main.c: 174: DispError(1);
+[; ;Main.c: 174: ClearLCDScreen();
 "174
-[e ( _DispError (1 -> 1 `i ]
+[e ( _ClearLCDScreen ..  ]
 [; ;Main.c: 175: return 'e';
 "175
 [e ) -> -> 101 `ui `uc ]
-[e $UE 170  ]
+[e $UE 171  ]
 "176
 }
 [e :U 172 ]
 [; ;Main.c: 176: }
-[; ;Main.c: 178: return chf;
+[; ;Main.c: 178: if( chf!='+' && chf!='-' && chf!='x' && chf!='/' )
 "178
-[e ) _chf ]
-[e $UE 170  ]
-[; ;Main.c: 179: }
+[e $ ! && && && != -> _chf `ui -> 43 `ui != -> _chf `ui -> 45 `ui != -> _chf `ui -> 120 `ui != -> _chf `ui -> 47 `ui 173  ]
+[; ;Main.c: 179: {
 "179
-[e :UE 170 ]
+{
+[; ;Main.c: 180: DispError(1);
+"180
+[e ( _DispError (1 -> 1 `i ]
+[; ;Main.c: 181: return 'e';
+"181
+[e ) -> -> 101 `ui `uc ]
+[e $UE 171  ]
+"182
 }
-"183
+[e :U 173 ]
+[; ;Main.c: 182: }
+[; ;Main.c: 184: return chf;
+"184
+[e ) _chf ]
+[e $UE 171  ]
+[; ;Main.c: 185: }
+"185
+[e :UE 171 ]
+}
+"189
 [v _DispError `(v  1 ef1`i ]
 {
-[; ;Main.c: 182: void DispError(int numb)
-[; ;Main.c: 183: {
+[; ;Main.c: 188: void DispError(int numb)
+[; ;Main.c: 189: {
 [e :U _DispError ]
 [v _numb `i  1 r1 ]
 [f ]
-[; ;Main.c: 184: ClearLCDScreen();
-"184
-[e ( _ClearLCDScreen ..  ]
-[; ;Main.c: 186: switch(numb)
-"186
-[e $U 175  ]
-[; ;Main.c: 187: {
-"187
-{
-[; ;Main.c: 188: case 0: WriteStringToLCD("Wrong Input"); break;
-"188
-[e :U 176 ]
-[e ( _WriteStringToLCD (1 :s 2C ]
-[e $U 174  ]
-[; ;Main.c: 189: case 1: WriteStringToLCD("Wrong Function"); break;
-"189
-[e :U 177 ]
-[e ( _WriteStringToLCD (1 :s 3C ]
-[e $U 174  ]
-[; ;Main.c: 190: case 2: WriteStringToLCD("Wrong Argument"); break;
+[; ;Main.c: 190: ClearLCDScreen();
 "190
-[e :U 178 ]
-[e ( _WriteStringToLCD (1 :s 4C ]
-[e $U 174  ]
-[; ;Main.c: 191: default: WriteStringToLCD("Wrong Input"); break;
-"191
-[e :U 179 ]
-[e ( _WriteStringToLCD (1 :s 5C ]
-[e $U 174  ]
+[e ( _ClearLCDScreen ..  ]
+[; ;Main.c: 192: switch(numb)
 "192
-}
-[; ;Main.c: 192: }
-[e $U 174  ]
-"186
-[e :U 175 ]
-[e [\ _numb , $ -> 0 `i 176
- , $ -> 1 `i 177
- , $ -> 2 `i 178
- 179 ]
-"192
-[e :U 174 ]
-[; ;Main.c: 193: }
+[e $U 176  ]
+[; ;Main.c: 193: {
 "193
-[e :UE 173 ]
-}
+{
+[; ;Main.c: 194: case 0: WriteStringToLCD("Wrong Input"); break;
+"194
+[e :U 177 ]
+[e ( _WriteStringToLCD (1 :s 2C ]
+[e $U 175  ]
+[; ;Main.c: 195: case 1: WriteStringToLCD("Wrong Function"); break;
+"195
+[e :U 178 ]
+[e ( _WriteStringToLCD (1 :s 3C ]
+[e $U 175  ]
+[; ;Main.c: 196: case 2: WriteStringToLCD("Wrong Argument"); break;
 "196
+[e :U 179 ]
+[e ( _WriteStringToLCD (1 :s 4C ]
+[e $U 175  ]
+[; ;Main.c: 197: default: WriteStringToLCD("Wrong Input"); break;
+"197
+[e :U 180 ]
+[e ( _WriteStringToLCD (1 :s 5C ]
+[e $U 175  ]
+"198
+}
+[; ;Main.c: 198: }
+[e $U 175  ]
+"192
+[e :U 176 ]
+[e [\ _numb , $ -> 0 `i 177
+ , $ -> 1 `i 178
+ , $ -> 2 `i 179
+ 180 ]
+"198
+[e :U 175 ]
+[; ;Main.c: 199: }
+"199
+[e :UE 174 ]
+}
+"202
 [v _disp_num `(v  1 ef1`i ]
 {
-[; ;Main.c: 195: void disp_num(int numb)
-[; ;Main.c: 196: {
+[; ;Main.c: 201: void disp_num(int numb)
+[; ;Main.c: 202: {
 [e :U _disp_num ]
 [v _numb `i  1 r1 ]
 [f ]
-"197
-[v _UnitDigit `uc  1 a ]
-[; ;Main.c: 197: unsigned char UnitDigit = 0;
-[e = _UnitDigit -> -> 0 `i `uc ]
-"198
-[v _TenthDigit `uc  1 a ]
-[; ;Main.c: 198: unsigned char TenthDigit = 0;
-[e = _TenthDigit -> -> 0 `i `uc ]
-[; ;Main.c: 200: if(numb<0)
-"200
-[e $ ! < _numb -> 0 `i 181  ]
-[; ;Main.c: 201: {
-"201
-{
-[; ;Main.c: 202: numb = -1*numb;
-"202
-[e = _numb * -U -> 1 `i _numb ]
-[; ;Main.c: 203: WriteDataToLCD('-');
 "203
-[e ( _WriteDataToLCD (1 -> -> 45 `ui `uc ]
+[v _UnitDigit `uc  1 a ]
+[; ;Main.c: 203: unsigned char UnitDigit = 0;
+[e = _UnitDigit -> -> 0 `i `uc ]
 "204
-}
-[e :U 181 ]
-[; ;Main.c: 204: }
-[; ;Main.c: 206: TenthDigit = (numb/10);
+[v _TenthDigit `uc  1 a ]
+[; ;Main.c: 204: unsigned char TenthDigit = 0;
+[e = _TenthDigit -> -> 0 `i `uc ]
+[; ;Main.c: 206: if(numb<0)
 "206
-[e = _TenthDigit -> / _numb -> 10 `i `uc ]
-[; ;Main.c: 208: if( TenthDigit != 0)
+[e $ ! < _numb -> 0 `i 182  ]
+[; ;Main.c: 207: {
+"207
+{
+[; ;Main.c: 208: numb = -1*numb;
 "208
-[e $ ! != -> _TenthDigit `i -> 0 `i 182  ]
-[; ;Main.c: 209: WriteDataToLCD(TenthDigit+0x30);
+[e = _numb * -U -> 1 `i _numb ]
+[; ;Main.c: 209: WriteDataToLCD('-');
 "209
-[e ( _WriteDataToLCD (1 -> + -> _TenthDigit `i -> 48 `i `uc ]
+[e ( _WriteDataToLCD (1 -> -> 45 `ui `uc ]
+"210
+}
 [e :U 182 ]
-[; ;Main.c: 211: UnitDigit = numb - TenthDigit*10;
-"211
-[e = _UnitDigit -> - _numb * -> _TenthDigit `i -> 10 `i `uc ]
-[; ;Main.c: 213: WriteDataToLCD(UnitDigit+0x30);
-"213
-[e ( _WriteDataToLCD (1 -> + -> _UnitDigit `i -> 48 `i `uc ]
-[; ;Main.c: 214: }
+[; ;Main.c: 210: }
+[; ;Main.c: 212: TenthDigit = (numb/10);
+"212
+[e = _TenthDigit -> / _numb -> 10 `i `uc ]
+[; ;Main.c: 214: if( TenthDigit != 0)
 "214
-[e :UE 180 ]
+[e $ ! != -> _TenthDigit `i -> 0 `i 183  ]
+[; ;Main.c: 215: WriteDataToLCD(TenthDigit+0x30);
+"215
+[e ( _WriteDataToLCD (1 -> + -> _TenthDigit `i -> 48 `i `uc ]
+[e :U 183 ]
+[; ;Main.c: 217: UnitDigit = numb - TenthDigit*10;
+"217
+[e = _UnitDigit -> - _numb * -> _TenthDigit `i -> 10 `i `uc ]
+[; ;Main.c: 219: WriteDataToLCD(UnitDigit+0x30);
+"219
+[e ( _WriteDataToLCD (1 -> + -> _UnitDigit `i -> 48 `i `uc ]
+[; ;Main.c: 220: }
+"220
+[e :UE 181 ]
 }
 [a 2C 87 114 111 110 103 32 73 110 112 117 116 0 ]
 [a 5C 87 114 111 110 103 32 73 110 112 117 116 0 ]

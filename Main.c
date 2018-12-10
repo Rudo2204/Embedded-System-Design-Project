@@ -52,6 +52,12 @@ void main(void)
                     case 'x': func = '^'; next = 1; break;
                     case '/': shift = 1; next = 1; break;
                 }
+                if(num1 == 0 && key == '/')
+                {
+                    shift = 0;
+                    next = 0;
+                    break;
+                }
                 if(!shift && func != '.') WriteDataToLCD(func);
                 if(func == '^') WriteDataToLCD(0x32); // 2
             }

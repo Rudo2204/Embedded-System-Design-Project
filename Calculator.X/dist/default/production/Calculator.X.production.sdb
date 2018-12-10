@@ -1294,13 +1294,13 @@
 [v _ClearLCDScreen `(v  1 e 0 0 ]
 "19 ../Main.c
 [v _main `(v  1 e 0 0 ]
-"142
+"148
 [v _get_num `(i  1 e 2 0 ]
-"165
+"171
 [v _get_func `(uc  1 e 1 0 ]
-"183
+"189
 [v _DispError `(v  1 e 0 0 ]
-"196
+"202
 [v _disp_num `(v  1 e 0 0 ]
 "406 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\lib\doprnt.c
 [v _fround `(d  1 s 3 fround ]
@@ -2065,14 +2065,14 @@
 "19 ../Main.c
 [v _main `(v  1 e 0 0 ]
 {
-"124
+"130
 [v main@i `i  1 a 2 54 ]
 "20
 [v main@msg `[16]uc  1 a 16 31 ]
-"24
-[v main@num2 `l  1 a 4 63 ]
 "22
-[v main@num1 `l  1 a 4 59 ]
+[v main@num1 `l  1 a 4 63 ]
+"24
+[v main@num2 `l  1 a 4 59 ]
 "28
 [v main@result `d  1 a 3 47 ]
 "25
@@ -2085,23 +2085,23 @@
 [v main@key `uc  1 a 1 67 ]
 "23
 [v main@func `uc  1 a 1 58 ]
-"133
+"139
 } 0
-"183
+"189
 [v _DispError `(v  1 e 0 0 ]
 {
 [v DispError@numb `i  1 p 2 7 ]
-"193
+"199
 } 0
-"142
+"148
 [v _get_num `(i  1 e 2 0 ]
 {
 [v get_num@ch `uc  1 a 1 wreg ]
-"143
+"149
 [v get_num@num `i  1 a 2 10 ]
-"142
+"148
 [v get_num@ch `uc  1 a 1 wreg ]
-"162
+"168
 } 0
 "488 C:\Program Files (x86)\HI-TECH Software\PICC\9.82\sources\doprnt.c
 [v _sprintf `(i  1 e 2 0 ]
